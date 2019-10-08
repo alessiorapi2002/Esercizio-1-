@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+
+        #tab {
+
+            width: 420px;
+
+       
+            margin-left: auto;
+
+            margin-right: auto;
+
+            margin-top: 70px;
+
+        }
+
+
+
+        body {
+
+            background-color: rgb(15, 3, 3);
+
+        }
+
+
+
+        th {
+
+            background-color: #00FF00;
+
+            width: 140px;
+
+            color: #1bc941;
+
+            border: green solid 1px;
+
+        }
+
+
+
+        td {
+
+            background-color: rgb(17, 16, 16);
+
+            width: 140px;
+
+            border: rgb(23, 73, 182) solid 1px;
+
+        }
+
+
+
+        .b1 {
+
+            background-color: #FFE3AC;
+
+            width: 100px;
+
+            height: 50px;
+
+            font-size: 15px;
+
+            margin-top: 20px;
+
+            margin-bottom: 2px;
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+
+        <table id="tab">
+
+            <tr>
+
+                <th> Nome </th>
+
+                <th> Cognome </th>
+
+                <th> Data di nascita </th>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    
+
+                    <input type="text" name="n1" placeholder="nome">
+
+                     
+
+                </td>
+
+                <td>
+
+                     
+
+                    <input type="text" name="n2" placeholder="cognome">
+
+                     
+
+                </td>
+
+                <td>
+
+                    
+
+                        <input type="text" name="n3" placeholder="data">
+
+                    
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        
+
+    <script type="text/javascript">
+
+
+
+function funzione()
+
+{
+
+var table = document.getElementById("tab");
+
+var riga = table.insertRow(1);
+
+
+
+var colonna0 = riga.insertCell(0);
+
+var colonna1 = riga.insertCell(1);
+
+var colonna2 = riga.insertCell(2);
+
+colonna0.innerHTML = "<td> <div class='form-group'> <input type='text' name= 'n1' placeholder='nome' > </div> </td>";
+
+colonna1.innerHTML = "<td> <div class='form-group'> <input type='text' name= 'n2' placeholder='cognome'> </div> </td>";
+
+colonna2.innerHTML = "<td> <div class='form-group'> <input type= 'text' name= 'n3' placeholder='data'> </div> </td> ";
+
+}
+
+
+
+  </script>
+
+
+
+        <center> <button class="b1" onclick="funzione()" type="button"> Add line </button> </center>
+
+
+
+
+
+</body>
+
+</html>
